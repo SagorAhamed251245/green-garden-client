@@ -1,35 +1,16 @@
 import Link from "next/link";
-import React from "react";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 
-const FullViewNav = () => {
-  const navPath = [
-    {
-      title: "Home",
-      path: "/",
-    },
-    {
-      title: "About",
-      path: "/about",
-    },
-    {
-      title: "Services",
-      path: "/services",
-    },
-    {
-      title: "Blog",
-      path: "/blog",
-    },
-  ];
+const FullViewNav = ({ navPath }) => {
   return (
     <>
-      <div className="w-full h-16 flex justify-center items-center bg-secondary text-white px-10 font-semibold  ">
+      <div className="w-full  h-16 flex justify-center items-center bg-secondary text-white px-10 font-semibold  ">
         {/* logo */}
-        <div className=" h-full w-[30%] flex items-center text-2xl ">
+        <div className=" h-full w-[30%] flex items-center lg:text-2xl md:text-xl ">
           Green<span className="text-primary">Garden</span>
         </div>
         {/* navigation */}
-        <div className="  h-full w-[40%] ">
+        <div className="  h-full w-[40%] md:text-sm lg:text-base">
           <ul className="flex h-full justify-between items-center">
             {navPath.map((item, index) => (
               <li key={index}>

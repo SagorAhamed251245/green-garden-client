@@ -1,9 +1,16 @@
+import navPath from "@/data/nav/navData";
 import FullViewNav from "./FullViewNav";
+import TabViewNav from "./TabViewNav";
 
 const Navbar = () => {
   return (
     <>
-      <FullViewNav />
+      <nav className="hidden lg:block">
+        <FullViewNav navPath={navPath} />
+      </nav>
+      <nav className="lg:hidden">
+        <TabViewNav navPath={navPath} />
+      </nav>
     </>
   );
 };
