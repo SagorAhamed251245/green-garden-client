@@ -16,8 +16,7 @@ const BurgerMenu = () => {
   return (
     <>
       <svg
-      
-        className={`swap-off fill-current w-8 h-8 ${
+        className={`swap-off fill-current w-8 h-10 ${
           stopAnimation ? "" : "animate-spin"
         }`}
         viewBox="0 0 24 24"
