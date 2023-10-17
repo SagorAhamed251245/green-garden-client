@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import PrimaryBtn from "../Buttons/PrimaryBtn";
 import { useState } from "react";
 import BurgerMenu from "./BurgerMenu";
+import CloseMenu from "./CloseMenu";
 
 const TabViewNav = ({ navPath }) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
   console.log("🚀 ~ file: tabViewNav.jsx:8 ~ TabViewNav ~ isOpen:", isOpen);
 
   return (
@@ -15,29 +15,29 @@ const TabViewNav = ({ navPath }) => {
         Green<span className="text-primary">Garden</span>
       </div>
       {/* navigation */}
-      <div className="  h-full md:text-sm lg:text-base">
-        <div className="relative">
+      <div className="  h-full md:text-sm lg:text-base flex justify-center items-center">
+        <div className="relative ">
           <button
             onClick={() => {
-              setOpen(false), console.log("open");
+              setOpen(false);
             }}
-            className={!isOpen ? "hidden" : ""}
+            className={!isOpen ? "hidden " : ""}
           >
             <BurgerMenu />
           </button>
           <button
             onClick={() => {
-              setOpen(true), console.log("close");
+              setOpen(true);
             }}
             className={isOpen ? "hidden" : ""}
           >
-            close
+            <CloseMenu />
           </button>
 
           <ul
             className={
               !isOpen
-                ? "h-auto w-[300px] absolute top-30 z-0 right-5 bg-red-300  px-5 "
+                ? "h-auto w-[200px] absolute top-30 z-0 -right-9 bg-primary py-2 px-5 flex flex-col  gap-5 rounded-lg justify-center items-center transition-all duration-1000 ease-in-out  "
                 : "hidden"
             }
           >
