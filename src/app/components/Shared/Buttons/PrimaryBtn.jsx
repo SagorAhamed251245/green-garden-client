@@ -4,10 +4,10 @@ const PrimaryBtn = ({ children, path, btnType }) => {
   return (
     <>
       <Link
-        href={path}
+        href={path ? path : "/"}
         className={`${
-          btnType === "primary" ? "bg-primary" : "bg-secondary"
-        } px-8 py-2 rounded-full`}
+          btnType === "secondary" ? "bg-secondary" : "bg-primary"
+        } px-5 py-2 rounded-full text-white text-sm md:text-base`}
       >
         {children}
       </Link>

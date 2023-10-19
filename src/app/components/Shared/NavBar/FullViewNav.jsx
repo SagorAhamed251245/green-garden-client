@@ -21,9 +21,7 @@ const FullViewNav = ({ navPath }) => {
         </div>
         {/* profile and login and logout  */}
         <div className=" h-full  w-[30%] flex items-center justify-end">
-          <PrimaryBtn path={""} btnType={"primary"}>
-            Login
-          </PrimaryBtn>
+          <PrimaryBtn path={""}>Login</PrimaryBtn>
         </div>
       </div>
     </>
