@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.slow-Motion {
+  animation: pulse 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.spin {
+  animation: spin 0.3s linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(90deg);
+  }
+}

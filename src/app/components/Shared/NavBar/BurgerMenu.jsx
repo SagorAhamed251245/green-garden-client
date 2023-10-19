@@ -2,7 +2,7 @@ const BurgerMenu = () => {
   return (
     <>
       <svg
-        className={`swap-off fill-current w-8 h-8 transition-all duration-300 ease-in-out hover:transform hover:rotate-180
+        className={`swap-off fill-current w-8 h-8  
        `}
         viewBox="0 0 24 24"
         fill="none"

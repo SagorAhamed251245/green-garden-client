@@ -3,7 +3,7 @@ import bannerImage from "@/assets/banner.png";
 
 const Banner = () => {
   return (
-    <section className="flex h-[600px] ">
+    <section className="flex h-[600px]">
       <div className="flex w-[40%] h-full ">
         <Image
           src={bannerImage}
@@ -14,11 +14,12 @@ const Banner = () => {
         />
       </div>
 
-      <div className="px-10 w-[60%]">
-        <h1>
-          Crafting <span>Green</span> Masterpieces
+      <div className="px-10 w-[60%] mx-auto ">
+        <h1 className="text-4xl font-bold text-secondary">
+          Crafting <span className="text-primary">Green</span> <br />
+          Masterpieces
         </h1>
-        <p className="line-clamp-2">
+        <p className="line-clamp-3 w-[40%]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
           nesciunt ducimus, praesentium porro veniam ut distinctio nam modi
           suscipit, deserunt blanditiis odit illum adipisci cumque rem impedit

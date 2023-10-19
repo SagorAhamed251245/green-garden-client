@@ -6,6 +6,7 @@ import CloseMenu from "./CloseMenu";
 
 const TabViewNav = ({ navPath }) => {
   const [isOpen, setOpen] = useState(true);
+
   console.log("🚀 ~ file: tabViewNav.jsx:8 ~ TabViewNav ~ isOpen:", isOpen);
 
   return (
@@ -37,7 +38,7 @@ const TabViewNav = ({ navPath }) => {
           <ul
             className={
               !isOpen
-                ? "h-auto w-[200px] absolute top-30 z-0 -right-9 bg-primary py-2 px-5 flex flex-col  gap-5 rounded-lg justify-center items-center transition-all duration-1000 ease-in-out  "
+                ? "h-auto w-[200px] absolute top-30 z-0 -right-9 bg-primary py-2 px-5 flex flex-col  gap-5 rounded-lg justify-center items-center transition-all duration-1000 ease-in-out  slow-Motion"
                 : "hidden"
             }
           >

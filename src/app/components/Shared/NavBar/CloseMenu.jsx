@@ -1,12 +1,14 @@
+import { useState } from "react";
+
 const CloseMenu = () => {
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"
+        className="spin"
         height="32"
         viewBox="0 0 32 32"
-        className="transition-all duration-300 ease-in-out hover:transform hover:rotate-90"
       >
         <line
           x1="7"
