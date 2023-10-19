@@ -27,9 +27,9 @@ const SecondBanner = () => {
             width={1920}
             height={1080}
             alt="ImagePlaceholder"
-            className="rounded-b-3xl"
+            className="lg:rounded-b-3xl rounded-b-lg "
           />
-          <div className="bg-secondary rounded-b-3xl text-white text-center font-bold text-xs md:text-2xl  h-10 md:h-20 w-full absolute bottom-0 flex items-center justify-center">
+          <div className="bg-secondary lg:rounded-b-3xl rounded-b-lg  text-white text-center font-bold text-xs md:text-2xl  h-10 md:h-20 w-full absolute bottom-0 flex items-center justify-center">
             <p className="w-[25%] ">
               13<span className="text-primary">+</span>
               <br />
