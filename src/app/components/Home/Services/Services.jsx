@@ -10,9 +10,9 @@ const Services = () => {
     },
     {
       _id: "2",
-      serviceName: "",
+      serviceName: "s",
       serviceDetails:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab similique rem odio delectus, ipsam nobis officia. Enim, necessitatibus, aperiam aliquid est nisi velit eligendi, molestiae quam saepe maxime expedita. ",
+        " Lorem ipsums dolor sit amet consectetur adipisicing elit. Non ab similique rem odio delectus, ipsam nobis officia. Enim, necessitatibus, aperiam aliquid est nisi velit eligendi, molestiae quam saepe maxime expedita. ",
       serviceIcon: <MdGrass></MdGrass>,
     },
   ];
